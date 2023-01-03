@@ -3,9 +3,9 @@
 
 
 html,body {
-    font-family: Source Code Pro , monospace;
+    font-family: 'Ubuntu Mono', monospace;
     font-size: 16px;
-    background-color: #181825;
+    background: #181825;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -59,6 +59,7 @@ ul {
     padding: 3px;
     border: 1px solid white;
 }
+
 div.taskbar {
     color: #a9b1d6;
     background-color: #262434;
