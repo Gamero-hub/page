@@ -1,93 +1,100 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>🫡🤓</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-      <div class="clock-box">
-        <div id="clockbox"></div>
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 
-        <script type="text/javascript">
-        function GetClock(){
-        var d=new Date();
-        var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds();
-        if(nmin<=9) nmin="0"+nmin;
-        if(nsec<=9) nsec="0"+nsec;
-        
-        var clocktext=""+nhour+":"+nmin+":"+nsec+"";
-        document.getElementById('clockbox').innerHTML=clocktext;
-        }
-        
-        GetClock();
-        setInterval(GetClock,1000);
-        </script>
-        
 
-        <div id="datebox"></div>
 
-<script type="text/javascript">
-var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
-
-function GetClock(){
-var d=new Date();
-var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
-
-var clocktext=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+"";
-document.getElementById('datebox').innerHTML=clocktext;
+html,body {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 16px;
+    background: #181825;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0px;
+    margin: 0px;
+    
 }
 
-GetClock();
-setInterval(GetClock,1000);
-</script>
+img {
+    height: 230px;
+    width: 630px;
+    object-fit: cover;
+    border: 2px solid #a9b1d6;
+    /* border-bottom: none; */
+    margin-bottom: -3px;
+
+}
+
+nav {
+    color: #a9b1d6;
+    background-color: #13131e;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 0px;
+    text-align: center;
+    border: 2px solid #a9b1d6;
+    border-top: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+    
+}
+
+ul {
+    list-style-type: none;
+    margin-left: -35px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 
 
 
-      </div>
-     
-      <img src="wallpaper/wallhaven-1p398w_1920x1080.png" alt="image of moon">
+}
 
+/* div.user {
+    background-color: #262434;
+    color: white;
+    margin-top: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding: 3px;
+    border: 1px solid white;
+}
+div.taskbar {
+    color: #a9b1d6;
+    background-color: #262434;
+    border: 1px solid #a9b1d6;
+    padding: 3px;   
+} */
 
-        <nav>
-          
-            <ul>
-              <li><a href="https://github.com/">github</a></li>
-              <li><a href="https://wallhaven.cc/">wallhaven</a></li>
-              <li><a href="https://www.youtube.com/">youtube</a></li>
-              <li><a href="https://web.whatsapp.com/">whatsapp</a></li>
-            </ul>
-        
-            <ul>
-              <li><a href="https://animeflv/home">animeflv</a></li>
-              <li><a href="https://animepahe.org/">animepahe</a></li>
-              <li><a href="https://animixplay.to/">animixplay</a></li>
-              <li><a href="https://subsplease.org/">subsplease</a></li>
-            </ul>
-        
-            <ul>
-              <li><a href="https://www.youtube.com/">youtube</a></li>
-              <li><a href="https://rarbgto.org/index80.php">rarbg</a></li>
-              <li><a href="https://nyaa.si/">nyaa</a></li>
-              <li><a href="http://192.168.0.10:4000/">dashy</a></li>
-            </ul>
+.clock-box {
+    position: relative;
+    color: #a9b1d6;
+    background-color: #181825;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+}
 
-            <ul>
-              <li><a href="https://www.reddit.com/r/unixporn/">r/unixporn</a></li>
-              <li><a href="https://www.reddit.com/r/Animemes/">r/animeme</a></li>
-              <li><a href="https://www.reddit.com/r/archlinux/">r/archlinux</a></li>
-              <li><a href="https://www.reddit.com/r/anime_irl/">r/anime_irl</a></li>
-            </ul>
+a {
+    text-decoration: none;
+    color: #a9b1d6;
 
-            
+}
 
-          </nav>
-          <form action="https://duckduckgo.com/" method="GET" target="_blank">
-            <input autofocus
-                   name="q"
-                   type="search"
-                   placeholder="search..."
-                   tabindex="1">
-          </form>
-    </body>
-</html>
+input {
+    background-color: #13131e;
+    font: 16px 'Ubuntu Mono', monospace;
+    color: #a9b1d6;
+    height: 100%;
+    width: 100%;
+    border: 2px solid #a9b1d6;
+    border-top: none;
+    text-align: center;
+    margin-top: 0px;
+    outline: none;
+    padding: 5px;
+  }
+
+input::placeholder {
+    color: #a9b1d6;
+}
