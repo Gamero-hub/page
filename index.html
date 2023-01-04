@@ -7,7 +7,7 @@
     <body>
       <div class="clock-box">
         <div id="clockbox"></div>
-
+        <h1>Hi, Pablo</h1>
         <script type="text/javascript">
         function GetClock(){
         var d=new Date();
@@ -45,8 +45,8 @@ setInterval(GetClock,1000);
 
 
       </div>
-     
-      <img src="wallpaper/wallhaven-z8doyv_1920x1080.png" alt="image of moon">
+      
+      <img src="wallpaper/wallhaven-z8doyv_1920x1080.png" alt="">
 
 
         <nav>
@@ -82,11 +82,47 @@ setInterval(GetClock,1000);
             
 
           </nav>
-          <form action="https://google.com/" method="GET" target="_blank">
+          <form action="https://google.com/search" method="GET" target="_blank">
             <input autofocus
                    name="q"
                    type="search"
                    placeholder="buscar..."
                    tabindex="1">
-          </form>
-    </body>
+    
+          <style>
+            #playButton {
+              width: 100px;
+              height: 50px;
+              position: fixed;
+              top: -10px;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            }
+            #playButton:hover {
+    background-color: rgb(197, 197, 197);
+    width: 100px;
+              height: 50px;
+              position: fixed;
+              top: -10px;
+              left: 50%;
+              transform: translate(-50%, -50%);
+  }
+          </style>
+          
+          <script>
+            const player = document.getElementById("player");
+            const playButton = document.getElementById("playButton");
+          
+            playButton.addEventListener("click", function() {
+              if (player.paused) {
+                player.play();
+                playButton.textContent = "Pause";
+              } else {
+                player.pause();
+                playButton.textContent = "Play";
+              }
+            });
+          </script>
+          
+          
+        </body>
