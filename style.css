@@ -45,11 +45,10 @@ ul {
     margin-left: -35px;
     margin-top: 5px;
     margin-bottom: 5px;
+    font-size: 20px;
 
-
-
+    transition: font-size 1s;
 }
-
 /* div.user {
     background-color: #262434;
     color: white;
@@ -59,7 +58,6 @@ ul {
     padding: 3px;
     border: 1px solid white;
 }
-
 div.taskbar {
     color: #a9b1d6;
     background-color: #262434;
@@ -79,7 +77,20 @@ div.taskbar {
 a {
     text-decoration: none;
     color: #a9b1d6;
+    transition: all 0.5s;
 
+}
+a:hover{
+    text-decoration: none;
+    color: #676c83;
+   
+      
+}
+a:hover:before{
+    content: "> ";
+    color: #a9b1d6;
+    position: absolute;
+    margin-left: -15px;
 }
 
 input {
@@ -95,7 +106,14 @@ input {
     outline: none;
     padding: 5px;
   }
+  
 
 input::placeholder {
     color: #a9b1d6;
+}
+h1{
+    position: absolute;
+    top: -590%;
+    left: -66%; 
+        
 }
