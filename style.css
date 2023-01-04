@@ -3,7 +3,7 @@
 
 
 html,body {
-    font-family: 'Ubuntu Mono', monospace;
+    font-family: 'nunito', monospace;
     font-size: 16px;
     background: #181825;
     position: absolute;
@@ -16,8 +16,8 @@ html,body {
 }
 
 img {
-    height: 230px;
-    width: 630px;
+    height: 550px;
+    width: 800px;
     object-fit: cover;
     border: 2px solid #a9b1d6;
     /* border-bottom: none; */
