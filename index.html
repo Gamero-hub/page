@@ -78,51 +78,16 @@ setInterval(GetClock,1000);
               <li><a href="https://www.chess.com/">chess</a></li>
               <li><a href="https://moewalls.com/">moewalls</a></li>
             </ul>
-
+       </nav>
+         <form action="https://google.com/search" method="GET" target="_blank">
+           <input autofocus
+                 name="q"
+                 type="search"
+                 placeholder="buscar..."
+                tabindex="1">
+          </form>
+    </body>
+</html>
             
 
-          </nav>
-          <form action="https://google.com/search" method="GET" target="_blank">
-            <input autofocus
-                   name="q"
-                   type="search"
-                   placeholder="buscar..."
-                   tabindex="1">
-    
-          <style>
-            #playButton {
-              width: 100px;
-              height: 50px;
-              position: fixed;
-              top: -10px;
-              left: 50%;
-              transform: translate(-50%, -50%);
-            }
-            #playButton:hover {
-    background-color: rgb(197, 197, 197);
-    width: 100px;
-              height: 50px;
-              position: fixed;
-              top: -10px;
-              left: 50%;
-              transform: translate(-50%, -50%);
-  }
-          </style>
-          
-          <script>
-            const player = document.getElementById("player");
-            const playButton = document.getElementById("playButton");
-          
-            playButton.addEventListener("click", function() {
-              if (player.paused) {
-                player.play();
-                playButton.textContent = "Pause";
-              } else {
-                player.pause();
-                playButton.textContent = "Play";
-              }
-            });
-          </script>
-          
-          
-        </body>
+        
