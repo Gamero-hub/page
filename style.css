@@ -3,8 +3,8 @@
 
 
 html,body {
-    font-family: 'Ubuntu', monospace;
-    font-size: 16px;
+    font-family: 'Nunito', monospace;
+    font-size: 18px;
     background: #181825;
     position: absolute;
     top: 50%;
@@ -45,7 +45,7 @@ ul {
     margin-left: -35px;
     margin-top: 5px;
     margin-bottom: 5px;
-    font-size: 20px;
+    font-size: 23px;
 
     transition: font-size 1s;
 }
@@ -95,7 +95,7 @@ a:hover:before{
 
 input {
     background-color: #13131e;
-    font: 16px 'Ubuntu Mono', monospace;
+    font: 16px 'Nunito', monospace;
     color: #a9b1d6;
     height: 100%;
     width: 100%;
